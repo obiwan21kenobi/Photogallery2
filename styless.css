@@ -1,0 +1,164 @@
+html {
+    background-color: black;
+    font-family: Arial;
+}
+
+body {
+    width: 1310px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+main {
+    background-color: white;
+    margin: 0 auto;
+    padding: 10px;
+    overflow: auto;
+}
+
+header {
+    background-color: black;
+
+}
+
+header h1 {
+    color: #007D7B;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+nav {
+    text-align: right;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #000;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover {
+    color: #007D7B;
+  }
+
+nav li {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: inline-block;
+}
+
+.TK {
+    width: 900px;
+    float: left;
+}
+
+[href="^ top"] {
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    border-radius:0px 0px 0px;
+    background-color: #007D7B;
+}
+
+h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.section {
+    float: right;
+    width: 420px;
+    text-align: right;
+    color: #000000;
+}
+
+p {
+    font-size: 20px;
+}
+
+.small {
+    width: 420px;
+    height: 281px;
+    margin: 5px;
+    position: relative;
+    color: #FFFFFF;
+}
+
+.big {
+    width: 420px;
+    height: 630px;
+    margin: 5px;
+    position: relative;
+    color: #FFFFFF;
+}
+
+figure, img {
+    float: left;
+    position: relative;
+}
+
+.top-left {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
+.section {
+    clear: both;
+    background-color: #FFFFFF;
+    color: #000000;
+    text-align: -webkit-right;
+}
+
+.contact {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+form   { 
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+}
+
+
+label {
+    color: #FFFFFF;
+    text-align: right;
+    padding: 10px;
+}
+
+input {
+  width:850px;
+}
+
+.id text {
+    color: #007D7B;
+}
+
+button {
+    background-color: #007D7B;
+    color: #FFFFFF;
+    font-size: 16px;
+    text-align: center;
+}
+
+footer {
+    color: #FFFFFF;
+    background-color: #000000;
+    text-align: center;
+}

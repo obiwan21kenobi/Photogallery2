@@ -1,24 +1,28 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     background-color: black;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    width: 1310px;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 10px;
+    background-color: black;
 }
 
-main {
-    background-color: white;
-    margin: 0 auto;
-    padding: 10px;
-    overflow: auto;
-}
-
+/* Header */
 header {
     background-color: black;
-
+    padding: 20px;
+    text-align: center;
 }
 
 header h1 {
@@ -27,138 +31,139 @@ header h1 {
     text-transform: uppercase;
 }
 
-nav {
-    text-align: right;
-    color: #fff;
-    text-transform: uppercase;
-    background-color: #000;
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 10px;
+    background-color: black;
 }
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
 }
 
 nav a:hover {
     color: #007D7B;
-  }
-
-nav li {
-    padding-left: 50px;
-    padding-right: 50px;
-    display: inline-block;
 }
 
-.TK {
-    width: 900px;
-    float: left;
-}
-
-[href="^ top"] {
-    position:fixed;
-    bottom:0px;
-    right:0px;
-    border-radius:0px 0px 0px;
+/* Fixed Top Button */
+.top-link {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 5px;
     background-color: #007D7B;
+    color: white;
+    text-decoration: none;
 }
 
-h2 {
-    font-size: 40px;
+/* Banner */
+.banner-img {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* About Section */
+.section {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.section h2 {
+    font-size: 30px;
     text-transform: uppercase;
 }
 
-.section {
-    float: right;
-    width: 420px;
-    text-align: right;
-    color: #000000;
+.section p {
+    font-size: 18px;
+    color: black;
 }
 
-p {
-    font-size: 20px;
+/* Gallery */
+.gallery {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
 }
 
-.small {
-    width: 420px;
-    height: 281px;
-    margin: 5px;
-    position: relative;
-    color: #FFFFFF;
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
 }
 
-.big {
-    width: 420px;
-    height: 630px;
-    margin: 5px;
-    position: relative;
-    color: #FFFFFF;
+.photos figure {
+    flex: 1 1 300px;
+    text-align: center;
 }
 
-figure, img {
-    float: left;
-    position: relative;
+.photos img {
+    width: 100%;
+    border-radius: 5px;
 }
 
-.top-left {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-}
-
-.bottom-right {
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-}
-
-.bottom-left {
-    position: absolute;
-    bottom: 5px;
-    left: 5px;
-}
-
-.section {
-    clear: both;
-    background-color: #FFFFFF;
-    color: #000000;
-    text-align: -webkit-right;
-}
-
+/* Contact Form */
 .contact {
-    color: #FFFFFF;
     text-align: center;
+    color: white;
+    padding: 20px;
 }
 
-form   { 
-    color: #FFFFFF;
-    text-align: center;
-    padding: 10px;
+form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-
 
 label {
-    color: #FFFFFF;
-    text-align: right;
+    text-align: left;
+    font-size: 16px;
+}
+
+input, textarea {
+    width: 100%;
     padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
-input {
-  width:850px;
-}
-
-.id text {
-    color: #007D7B;
+textarea {
+    height: 100px;
 }
 
 button {
     background-color: #007D7B;
-    color: #FFFFFF;
+    color: white;
     font-size: 16px;
-    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
+button:hover {
+    background-color: #005F5E;
+}
+
+/* Footer */
 footer {
-    color: #FFFFFF;
-    background-color: #000000;
     text-align: center;
+    color: white;
+    padding: 10px;
+    background-color: black;
+    margin-top: 20px;
 }
